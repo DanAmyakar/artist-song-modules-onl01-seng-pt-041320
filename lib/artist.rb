@@ -1,5 +1,7 @@
 require 'pry'
 
+
+
 class Artist
   extend 
   
