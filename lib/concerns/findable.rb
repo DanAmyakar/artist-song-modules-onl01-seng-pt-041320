@@ -1,6 +1,6 @@
 module Findable
   
-  module ClassFindableMethod
+  module ClassFindableMethods
     
     def find_by_name(name)
       all.detect {|obj| obj.name == name}
