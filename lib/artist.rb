@@ -4,8 +4,9 @@ require_relative './concerns/findable'
 
 class Artist
   
-  extend Memorable::ClassMemoryMethods
-  extend Findable::ClassFindableMethods
+  extend Memorable
+  extend Findable
+  extend Paramable
   
   attr_accessor :name
   attr_reader :songs
@@ -34,7 +35,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+#  def to_param
+#    name.downcase.gsub(' ', '-')
+#  end
 end
