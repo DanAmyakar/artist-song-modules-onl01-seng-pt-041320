@@ -5,7 +5,8 @@ require_relative './concerns/paramable'
 
 class Artist
   
-  extend Memorable
+  extend Memorable::ClassMemorableMethods
+  include Memorable::InstanceMemorableMethods
   extend Findable
   include Paramable
   
